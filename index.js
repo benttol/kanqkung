@@ -74,7 +74,7 @@ conn.on('user-presence-update', json => console.log(json.id + ' presence is => '
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by ig : @febby28_`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by ig : @kanqkung`)
 })
 
 conn.on('message-new', async(m) =>
@@ -200,7 +200,7 @@ var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
 conn.sendMessage(id, menu.menu(id, BotName, corohelp, tampilTanggal, tampilWaktu, instagram, whatsapp, kapanbotaktif) ,MessageType.text);
 }
 else if (text == 'Bentol'){
-conn.sendMessage(id, 'Bos Aing Paling Ganteng wkakwkaw' ,MessageType.text);
+conn.sendMessage(id, 'Apa? Jalanin Fitur #menu' ,MessageType.text);
 }
 else if (text == '#quran'){
 axios.get('https://api.banghasan.com/quran/format/json/acak').then((res) => {
@@ -210,7 +210,7 @@ axios.get('https://api.banghasan.com/quran/format/json/acak').then((res) => {
     let hasil = `[${ket}]   ${res.data.acak.ar.teks}\n\n${res.data.acak.id.teks}(QS.${res.data.surat.nama}, Ayat ${ket})`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
-}
+}Apa? Jalanin Fitur #help
 
 else if (text == '#donasi'){
 const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
@@ -502,7 +502,7 @@ _${kata}_
     });
     }
 
-if (text.includes("#animepict"))
+if (text.includes("#foto anime"))
    {
     var items = ["anime girl", "anime cantik", "anime", "anime aesthetic", "anime hd", "gambar anime hd"];
     var nime = items[Math.floor(Math.random() * items.length)];
