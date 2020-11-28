@@ -1,4 +1,4 @@
-## BOT Febb
+## BOT BENTOL
 BOT WHATSAPP YANG BISA DIGUNAKAN DI TERMUX
 
 
@@ -7,12 +7,23 @@ BOT WHATSAPP YANG BISA DIGUNAKAN DI TERMUX
 > download termux
 > buka
 > pkg install git
+> pkg install wget 
 > pkg install ffmpeg
 > pkg install nodejs
 > apt update && apt upgrade
-> git clone https://github.com/1NS0MNIA/yolo2
-> cd yolo2
+> git clone https://github.com/benttol/kanqkung
+> cd kanqkung
+> npm i -g cwebp
+> npm i -g ytdl
+> npm i
+> npm i got
+> node index.js
+TINGGAL SCAN BARCODE
 
+
+MENGAKTIFKAN BOT KEMBALI
+> git clone https://github.com/benttol/kanqkung
+> cd kankung
 > npm i node-tesseract-ocr
 > pkg install tesseract
 > npm i
