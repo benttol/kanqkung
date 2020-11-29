@@ -147,7 +147,7 @@ conn.sendMessage(id, titoe, MessageType.text);
 
 if (text.includes("#wiki")){
 const teks = text.replace(/#wiki /, "")
-axios.get(`https://mhankbarbar.herokuapp.com/api/wiki?q=${teks}=id&apiKey=lGjYt4zA5SQlTDx9z9Ca`).then((res) => {
+axios.get(`https://mhankbarbar.herokuapp.com/api/wiki?q=${teks}&lang=id&apiKey=zFuV88pxcIiCWuYlwg57`).then((res) => {
 	conn.sendMessage(id, '[ WAIT ] Sedang di proses⏳ silahkan tunggu sebentar', MessageType.text)
     let hasil = `📝Menurut Wikipedia:\n\n${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
@@ -502,7 +502,7 @@ _${kata}_
     });
     }
 
-if (text.includes("#animepict"))
+if (text.includes("#foto anime"))
    {
     var items = ["anime girl", "anime cantik", "anime", "anime aesthetic", "anime hd", "gambar anime hd"];
     var nime = items[Math.floor(Math.random() * items.length)];
