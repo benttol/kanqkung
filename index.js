@@ -550,7 +550,7 @@ if (text.includes("#alay")){
 
 
 
-else if (text.includes("#tts")) {
+else if (text.includes("#ttsid")) {
   var teks = text.split("#ttsid ")[1];
   var path = require('path');
   var text1 = teks.slice(6);
